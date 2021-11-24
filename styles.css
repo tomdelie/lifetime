@@ -65,6 +65,7 @@ input#birthday {
 }
 
 h1 {
+  z-index: 10;
   margin: 0;
   margin-top: 2rem;
   color: white;
@@ -72,6 +73,7 @@ h1 {
 }
 
 small {
+  z-index: 10;
   color: var(--white);
   margin-bottom: 1rem;
   font-size: 0.75rem;
@@ -80,7 +82,44 @@ small {
 .container {
   display: grid;
   gap: calc(var(--space)*4);
+  
   grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 640px) { /* sm */
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) { /* md */
+  .container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  :root {
+    --size: calc(0.25rem + 0.125rem);
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  small {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 1024px) { /* lg */
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (min-width: 1280px) { /* xl */
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .wrapper {

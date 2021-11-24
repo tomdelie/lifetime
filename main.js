@@ -38,7 +38,6 @@ const updateLifeElapsed = async (event, birthdayDOM) => {
   let monthsIndex = 1;
   for (const monthDOM of months) {
     if (monthsIndex <= diffMonths) {
-      console.log(monthsIndex, diffMonths)
       monthDOM.classList.remove('month-empty');
       monthDOM.classList.add('month-full');
 
