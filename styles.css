@@ -18,13 +18,15 @@ html, body {
   font-family: 'AirbnbCerealBook';
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 
 body {
   position: relative;
   background-color: var(--bg);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 form {
@@ -38,9 +40,9 @@ button {
   cursor: pointer;
   background: linear-gradient(-90deg, #6660E4 0%, #C227C1 100%);
   border: 0;
-  height: 100%;
+  height: 2rem;
   border-radius: 0.125rem;
-  padding: 0 1rem 0 1rem;
+  padding: 0.125rem 1rem 0.125rem 1rem;
   color: white;
   transition: all .25s ease-in; 
 }
@@ -65,11 +67,13 @@ input#birthday {
 h1 {
   margin: 0;
   color: white;
+  font-size: 1.25rem;
 }
 
 small {
   color: var(--white);
   margin-bottom: 1rem;
+  font-size: 0.75rem;
 }
 
 .container {
